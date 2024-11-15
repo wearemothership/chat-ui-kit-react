@@ -1,6 +1,9 @@
 # Chat UI Kit React
 
-[![Actions Status](https://github.com/chatscope/chat-ui-kit-react/workflows/build/badge.svg)](https://github.com/chatscope/chat-ui-kit-react/actions) [![npm version](https://img.shields.io/npm/v/@chatscope/chat-ui-kit-react.svg?style=flat)](https://npmjs.com/@chatscope/chat-ui-kit-react) [![](https://img.shields.io/npm/l/@chatscope/chat-ui-kit-react?dummy=unused)](https://github.com/chatscope/chat-ui-kit-react/blob/master/LICENSE) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://chatscope.io/storybook/react/)
+[![Actions Status](https://github.com/wearemothership/chat-ui-kit-react/workflows/build/badge.svg)](https://github.com/wearemothership/chat-ui-kit-react/actions) [![npm version](https://img.shields.io/npm/v/@wearemothership/chat-ui-kit-react.svg?style=flat)](https://npmjs.com/@wearemothership/chat-ui-kit-react) [![](https://img.shields.io/npm/l/@wearemothership/chat-ui-kit-react?dummy=unused)](https://github.com/wearemothership/chat-ui-kit-react/blob/master/LICENSE) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier) [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release) [![Storybook](https://cdn.jsdelivr.net/gh/storybookjs/brand@master/badge/badge-storybook.svg)](https://wearemothership.io/storybook/react/)
+
+> [!NOTE]
+> This has been forked from [@chatscope/use-chat](https://github.com/chatscope/use-chat)
 
 Build your own chat UI with React components in a few minutes.  
 The Chat UI Kit from chatscope is an open source UI toolkit for developing web chat applications.
@@ -25,13 +28,13 @@ Demos index: [https://chatscope.io/demo](https://chatscope.io/demo/).
 Using yarn:
 
 ```sh
-yarn add @chatscope/chat-ui-kit-react
+yarn add @wearemothership/chat-ui-kit-react
 ```
 
 Using npm:
 
 ```sh
-npm install @chatscope/chat-ui-kit-react
+npm install @wearemothership/chat-ui-kit-react
 ```
 
 **Styles**
@@ -39,13 +42,13 @@ npm install @chatscope/chat-ui-kit-react
 Using yarn:
 
 ```sh
-yarn add @chatscope/chat-ui-kit-styles
+yarn add @wearemothership/chat-ui-kit-styles
 ```
 
 Using npm:
 
 ```sh
-npm install @chatscope/chat-ui-kit-styles
+npm install @wearemothership/chat-ui-kit-styles
 ```
 
 ## Usage
@@ -53,14 +56,14 @@ npm install @chatscope/chat-ui-kit-styles
 ### ESM
 
 ```jsx
-import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
+import styles from "@wearemothership/chat-ui-kit-styles/dist/default/styles.min.css";
 import {
   MainContainer,
   ChatContainer,
   MessageList,
   Message,
   MessageInput,
-} from "@chatscope/chat-ui-kit-react";
+} from "@wearemothership/chat-ui-kit-react";
 
 <div style={{ position: "relative", height: "500px" }}>
   <MainContainer>
@@ -96,7 +99,7 @@ The library is written in Javascript, but Typescript typings are available in th
 
 ## See also
 
-[@chatscope/use-chat](https://github.com/chatscope/use-chat) is a React hook for state management in chat applications.  
+[@wearemothership/use-chat](https://github.com/wearemothership/use-chat) is a React hook for state management in chat applications.  
 Check it out and see how easy you can do the chat logic yourself.
 
 ## Show your support
@@ -116,4 +119,4 @@ If you've made an awesome chat UI and you love this library, please ⭐ this rep
 
 ## License
 
-[MIT](https://github.com/chatscope/chat-ui-kit-react/blob/master/LICENSE)
+[MIT](https://github.com/wearemothership/chat-ui-kit-react/blob/master/LICENSE)
