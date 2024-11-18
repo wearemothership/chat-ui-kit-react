@@ -1,104 +1,108 @@
 {
-	"name": "@chatscope/chat-ui-kit-react",
-	"version": "2.1.1",
-	"description": "React component library for creating chat interfaces",
-	"license": "MIT",
-	"homepage": "https://chatscope.io/",
-	"keywords": [
-		"chat",
-		"react",
-		"reactjs",
-		"ui",
-		"user interface",
-		"components",
-		"ui kit",
-		"communication",
-		"conversation",
-		"toolkit",
-		"library",
-		"frontend",
-		"reusable",
-		"feed",
-		"comments",
-		"social",
-		"talk"
-	],
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/chatscope/chat-ui-kit-react.git"
-	},
-	"main": "dist/cjs/index.js",
-	"module": "dist/es/index.js",
-	"types": "src/types/index.d.ts",
-	"peerDependencies": {
-		"prop-types": "^15.7.2",
-		"react": "^16.12.0 || ^17.0.0 || ^18.2.0",
-		"react-dom": "^16.12.0 || ^17.0.0 || ^18.2.0"
-	},
-	"devDependencies": {
-		"@babel/cli": "7.25.9",
-		"@babel/core": "7.26.0",
-		"@babel/eslint-parser": "^7.25.9",
-		"@babel/preset-env": "7.26.0",
-		"@babel/preset-react": "7.25.9",
-		"@commitlint/cli": "19.5.0",
-		"@commitlint/config-conventional": "19.5.0",
-		"@eslint/compat": "^1.2.3",
-		"@eslint/eslintrc": "^3.1.0",
-		"@eslint/js": "^9.14.0",
-		"@rollup/plugin-babel": "6.0.4",
-		"@rollup/plugin-commonjs": "28.0.1",
-		"@rollup/plugin-node-resolve": "15.3.0",
-		"@rollup/plugin-terser": "0.4.4",
-		"@types/node": "^20.17.6",
-		"@types/react": "^18.3.12",
-		"@typescript-eslint/eslint-plugin": "^8.14.0",
-		"@typescript-eslint/parser": "^8.14.0",
-		"babel-plugin-transform-react-remove-prop-types": "0.4.24",
-		"chokidar-cli": "3.0.0",
-		"eslint": "9.14.0",
-		"eslint-plugin-jsx-a11y": "6.10.2",
-		"eslint-plugin-react": "7.37.2",
-		"eslint-plugin-react-hooks": "^5.0.0",
-		"globals": "^15.12.0",
-		"husky": "9.1.6",
-		"lint-staged": "15.2.10",
-		"prettier": "3.3.3",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"rollup": "4.27.0",
-		"rollup-plugin-peer-deps-external": "2.2.4",
-		"typescript": "^5.6.3"
-	},
-	"scripts": {
-		"build:clean": "rm -Rf dist",
-		"build:umd": "rollup -c --bundleConfigAsCjs",
-		"build:cjs": "BABEL_ENV=cjs babel src/components -d dist/cjs",
-		"build:esm": "BABEL_ENV=esm babel src/components -d dist/es",
-		"build": "yarn run build:clean && yarn run build:esm && yarn run build:cjs && yarn run build:umd",
-		"pack": "yarn pack",
-		"watch": "chokidar 'src/**/*.*' -c 'yarn run build:esm'",
-		"prepublishOnly": "npm run build",
-		"prepare": "husky",
-		"lint-staged": "lint-staged"
-	},
-	"dependencies": {
-		"@chatscope/chat-ui-kit-styles": "^1.4.0",
-		"@fortawesome/fontawesome-free": "^6.6.0",
-		"@fortawesome/fontawesome-svg-core": "^6.6.0",
-		"@fortawesome/free-solid-svg-icons": "^6.6.0",
-		"@fortawesome/react-fontawesome": "^0.2.2",
-		"classnames": "^2.5.1",
-		"prop-types": "^15.7.2"
-	},
-	"lint-staged": {
-		"*.{js,css,md,jsx}": "prettier --write"
-	},
-	"files": [
-		"dist",
-		"src/**/*.d.ts"
-	],
-	"publishConfig": {
-		"access": "public"
-	}
+  "name": "@wearemothership/chat-ui-kit-react",
+  "version": "2.1.1",
+  "description": "React component library for creating chat interfaces",
+  "license": "MIT",
+  "homepage": "https://chatscope.io/",
+  "keywords": [
+    "chat",
+    "react",
+    "reactjs",
+    "ui",
+    "user interface",
+    "components",
+    "ui kit",
+    "communication",
+    "conversation",
+    "toolkit",
+    "library",
+    "frontend",
+    "reusable",
+    "feed",
+    "comments",
+    "social",
+    "talk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wearemothership/chat-ui-kit-react.git"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "src/types/index.d.ts",
+  "peerDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.25.9",
+    "@babel/core": "7.26.0",
+    "@babel/eslint-parser": "^7.25.9",
+    "@babel/preset-env": "7.26.0",
+    "@babel/preset-react": "7.25.9",
+    "@commitlint/cli": "19.5.0",
+    "@commitlint/config-conventional": "19.5.0",
+    "@eslint/compat": "^1.2.3",
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.14.0",
+    "@rollup/plugin-babel": "6.0.4",
+    "@rollup/plugin-commonjs": "28.0.1",
+    "@rollup/plugin-node-resolve": "15.3.0",
+    "@rollup/plugin-terser": "0.4.4",
+    "@types/node": "^20.17.6",
+    "@types/react": "^18.3.12",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "@typescript-eslint/parser": "^8.14.0",
+    "babel-plugin-transform-react-remove-prop-types": "0.4.24",
+    "chokidar-cli": "3.0.0",
+    "eslint": "9.14.0",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "globals": "^15.12.0",
+    "husky": "9.1.6",
+    "lint-staged": "15.2.10",
+    "prettier": "3.3.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rollup": "4.27.0",
+    "rollup-plugin-peer-deps-external": "2.2.4",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "build:clean": "rm -Rf dist",
+    "build:umd": "rollup -c --bundleConfigAsCjs",
+    "build:cjs": "BABEL_ENV=cjs babel src/components -d dist/cjs",
+    "build:esm": "BABEL_ENV=esm babel src/components -d dist/es",
+    "build": "yarn run build:clean && yarn run build:esm && yarn run build:cjs && yarn run build:umd",
+    "pack": "yarn pack",
+    "watch": "chokidar 'src/**/*.*' -c 'yarn run build:esm'",
+    "prepare": "husky",
+	"lint-staged": "lint-staged",
+	"prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@wearemothership/chat-ui-kit-styles": "^1.5.0",
+    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "classnames": "^2.5.1",
+    "prop-types": "^15.7.2"
+  },
+  "author": "supersnager <supersnager@gmail.com> (https://chatscope.io)",
+  "contributors": [
+    "vespasianvs <andy@wearemothership.com> (https://wearemothership.com)"
+  ],
+  "lint-staged": {
+    "*.{js,css,md,jsx}": "prettier --write"
+  },
+  "files": [
+    "dist",
+    "src/**/*.d.ts"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
