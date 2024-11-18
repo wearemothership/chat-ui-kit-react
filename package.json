@@ -1,6 +1,6 @@
 {
   "name": "@wearemothership/chat-ui-kit-react",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "React component library for creating chat interfaces",
   "license": "MIT",
   "homepage": "https://chatscope.io/",
@@ -32,8 +32,8 @@
   "types": "src/types/index.d.ts",
   "peerDependencies": {
     "prop-types": "^15.7.2",
-    "react": "^16.12.0 || ^17.0.0 || ^18.2.0",
-    "react-dom": "^16.12.0 || ^17.0.0 || ^18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/cli": "7.25.9",
@@ -50,9 +50,6 @@
     "@rollup/plugin-commonjs": "28.0.1",
     "@rollup/plugin-node-resolve": "15.3.0",
     "@rollup/plugin-terser": "0.4.4",
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "11.0.1",
     "@types/node": "^20.17.6",
     "@types/react": "^18.3.12",
     "@typescript-eslint/eslint-plugin": "^8.14.0",
@@ -71,7 +68,6 @@
     "react-dom": "^18.3.1",
     "rollup": "4.27.0",
     "rollup-plugin-peer-deps-external": "2.2.4",
-    "semantic-release": "24.2.0",
     "typescript": "^5.6.3"
   },
   "scripts": {
@@ -83,7 +79,8 @@
     "pack": "yarn pack",
     "watch": "chokidar 'src/**/*.*' -c 'yarn run build:esm'",
     "prepare": "husky",
-	"lint-staged": "lint-staged"
+	"lint-staged": "lint-staged",
+	"prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@wearemothership/chat-ui-kit-styles": "^1.5.0",
@@ -107,46 +104,5 @@
   ],
   "publishConfig": {
     "access": "public"
-  },
-  "release": {
-    "plugins": [
-      [
-        "@semantic-release/commit-analyzer",
-        {
-          "preset": "angular",
-          "releaseRules": [
-            {
-              "type": "docs",
-              "scope": "readme",
-              "release": "patch"
-            },
-            {
-              "scope": "no-release",
-              "release": false
-            }
-          ]
-        }
-      ],
-      "@semantic-release/release-notes-generator",
-      [
-        "@semantic-release/changelog",
-        {
-          "changelogFile": "CHANGELOG.md",
-          "changelogTitle": "# @chatscope/chat-ui-kit-react changelog"
-        }
-      ],
-      "@semantic-release/github",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/git",
-        {
-          "assets": [
-            "package.json",
-            "CHANGELOG.md"
-          ],
-          "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
-        }
-      ]
-    ]
   }
 }
