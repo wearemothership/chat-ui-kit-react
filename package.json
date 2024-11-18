@@ -78,7 +78,7 @@
 		"build": "yarn run build:clean && yarn run build:esm && yarn run build:cjs && yarn run build:umd",
 		"pack": "yarn pack",
 		"watch": "chokidar 'src/**/*.*' -c 'yarn run build:esm'",
-		"predeploy": "npm run build",
+		"prepublishOnly": "npm run build",
 		"prepare": "husky",
 		"lint-staged": "lint-staged"
 	},
